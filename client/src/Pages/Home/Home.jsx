@@ -48,7 +48,7 @@ const Home = () => {
       {/* <!-- end team section --> */}
 
       {/* <!-- client section --> */}
-      <ClientSection />
+      {/* <ClientSection /> */}
 
       {/* <!-- end client section --> */}
 

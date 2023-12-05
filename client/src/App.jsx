@@ -4,9 +4,9 @@ import { Routes, Route } from "react-router-dom";
 import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
-import WhySection from "./Components/Home/WhySection";
-import ServiceSection from "./Components/Home/ServiceSection";
-import TeamSection from "./Components/Home/TeamSection";
+import WhyUs from "./Pages/WhyUs/WhyUs";
+import Team from "./Pages/Team/Team";
+import Service from "./Pages/Service/Service";
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/sevice" element={<ServiceSection />} />
-        <Route path="/whyus" element={<WhySection />} />
-        <Route path="/team" element={<TeamSection />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/whyus" element={<WhyUs />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/login" element={<Login />} />
       </Routes>
     </>

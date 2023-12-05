@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const InfoSection = () => {
   return (
@@ -53,21 +54,21 @@ const InfoSection = () => {
               <div className="info_link_box">
                 <h4>Links</h4>
                 <div className="info_links">
-                  <a className="active" href="index.html">
+                  <Link className="active" to="/">
                     Home
-                  </a>
-                  <a className="" href="about.html">
+                  </Link>
+                  <Link className="" to="/about">
                     About
-                  </a>
-                  <a className="" href="service.html">
+                  </Link>
+                  <Link className="" to="/service">
                     Services
-                  </a>
-                  <a className="" href="why.html">
+                  </Link>
+                  <Link className="" to="/whyus">
                     Why Us
-                  </a>
-                  <a className="" href="team.html">
+                  </Link>
+                  <Link className="" to="/team">
                     Team
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
