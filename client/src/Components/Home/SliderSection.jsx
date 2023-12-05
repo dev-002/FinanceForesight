@@ -3,14 +3,18 @@ import React from "react";
 const SliderSection = () => {
   return (
     <>
-      <section class="slider_section ">
-        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container ">
-                <div class="row">
-                  <div class="col-md-6 ">
-                    <div class="detail-box">
+      <section className="slider_section ">
+        <div
+          id="customCarousel1"
+          className="carousel slide"
+          data-ride="carousel"
+        >
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <div className="container ">
+                <div className="row">
+                  <div className="col-md-6 ">
+                    <div className="detail-box">
                       <h1>
                         Crypto <br />
                         Currency
@@ -22,26 +26,26 @@ const SliderSection = () => {
                         veniam, vel architecto veritatis delectus repellat modi
                         impedit sequi.
                       </p>
-                      <div class="btn-box">
-                        <a href="" class="btn1">
+                      <div className="btn-box">
+                        <a href="" className="btn1">
                           Read More
                         </a>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="img-box">
+                  <div className="col-md-6">
+                    <div className="img-box">
                       <img src="images/slider-img.png" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item ">
-              <div class="container ">
-                <div class="row">
-                  <div class="col-md-6 ">
-                    <div class="detail-box">
+            <div className="carousel-item ">
+              <div className="container ">
+                <div className="row">
+                  <div className="col-md-6 ">
+                    <div className="detail-box">
                       <h1>
                         Crypto <br />
                         Currency
@@ -53,26 +57,26 @@ const SliderSection = () => {
                         veniam, vel architecto veritatis delectus repellat modi
                         impedit sequi.
                       </p>
-                      <div class="btn-box">
-                        <a href="" class="btn1">
+                      <div className="btn-box">
+                        <a href="" className="btn1">
                           Read More
                         </a>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="img-box">
+                  <div className="col-md-6">
+                    <div className="img-box">
                       <img src="images/slider-img.png" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="container ">
-                <div class="row">
-                  <div class="col-md-6 ">
-                    <div class="detail-box">
+            <div className="carousel-item">
+              <div className="container ">
+                <div className="row">
+                  <div className="col-md-6 ">
+                    <div className="detail-box">
                       <h1>
                         Crypto <br />
                         Currency
@@ -84,15 +88,15 @@ const SliderSection = () => {
                         veniam, vel architecto veritatis delectus repellat modi
                         impedit sequi.
                       </p>
-                      <div class="btn-box">
-                        <a href="" class="btn1">
+                      <div className="btn-box">
+                        <a href="" className="btn1">
                           Read More
                         </a>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="img-box">
+                  <div className="col-md-6">
+                    <div className="img-box">
                       <img src="images/slider-img.png" alt="" />
                     </div>
                   </div>
@@ -100,11 +104,11 @@ const SliderSection = () => {
               </div>
             </div>
           </div>
-          <ol class="carousel-indicators">
+          <ol className="carousel-indicators">
             <li
               data-target="#customCarousel1"
               data-slide-to="0"
-              class="active"
+              className="active"
             ></li>
             <li data-target="#customCarousel1" data-slide-to="1"></li>
             <li data-target="#customCarousel1" data-slide-to="2"></li>
