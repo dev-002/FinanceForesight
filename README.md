@@ -1,0 +1,9 @@
+Server .env
+
+```
+PORT = 5001
+MONGODB_URI = 'mongodb://localhost:27017/fincanceforesight'
+
+TOKEN = '51d4f2510207ba94b8eee6bff6bd7ca91caecb8a0eaee5ccf1b8622eb85f6980078b07a53cafc3bf36c47b142c14dd39339ed9fd07f5afcc225c08e2368cb060'
+REFRESHTOKEN = '62545a57c81fc565d99cc10f017400a1fac73b922e7f7d684b7362fb866089fa0014fd9bff639d69bcea8b15518064ddf2d07856e88c693b57e9a2c4e1f10feb'
+```
