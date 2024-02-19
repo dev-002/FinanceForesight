@@ -4,9 +4,9 @@ const jwt = require("jsonwebtoken");
 
 exports.LoginController = async (req, res, next) => {
   const { user: userBody } = req.body;
+  console.log(req.body);
   if (userBody) {
     const user = await UserModel.findOne({
-      username: userBody.username,
       email: userBody.email,
     });
     if (user) {

@@ -1,8 +1,10 @@
 import React from "react";
+import InfoSection from "./Home/InfoSection";
 
 const Footer = () => {
   return (
     <>
+      <InfoSection />
       {/* <!-- footer section --> */}
       <section className="footer_section">
         <div className="container">

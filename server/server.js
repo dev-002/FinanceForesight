@@ -8,13 +8,8 @@ const path = require("path");
 // Database connection
 const { connect_func } = require("./utilities/connect");
 connect_func();
-
-const corsOption = {
-  origin: "http://localhost:5173/",
-};
-
 const app = express();
-app.use(cors(corsOption));
+app.use(cors());
 app.use(bodyParser.json());
 
 const AuthRoute = require("./routes/AuthRoute");

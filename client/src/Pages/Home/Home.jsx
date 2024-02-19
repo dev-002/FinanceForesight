@@ -52,9 +52,6 @@ const Home = () => {
 
       {/* <!-- end client section --> */}
 
-      {/* <!-- info section --> */}
-      <InfoSection />
-
       {/* <!-- end info section --> */}
       <Footer />
     </>

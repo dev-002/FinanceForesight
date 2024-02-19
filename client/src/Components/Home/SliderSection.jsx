@@ -16,8 +16,8 @@ const SliderSection = () => {
                   <div className="col-md-6 ">
                     <div className="detail-box">
                       <h1>
-                        Crypto <br />
-                        Currency
+                        <br />
+                        Currency Saver
                       </h1>
                       <p>
                         Explicabo esse amet tempora quibusdam laudantium,

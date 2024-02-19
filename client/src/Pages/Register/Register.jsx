@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import "./login.css";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import { auth } from "../../../APPLink";
 
-const Login = () => {
+const Register = () => {
   const navigate = useNavigate();
   const [data, setData] = useState({ email: "", password: "" });
 
   const handleChange = (e) => {
+    console.log(e.target.name, e.target.value);
     setData(() => ({ ...data, [e.target.name]: e.target.value }));
   };
 
@@ -18,16 +17,15 @@ const Login = () => {
     try {
       const response = await axios({
         method: "post",
-        url: auth.login,
-        data: data,
+        URL: auth.register,
+        data,
       });
       if (response.status === 200) return navigate("/");
     } catch (error) {
-      console.log("Error in Login", error);
-      setData({ ...data, email: "", password: "" });
+      console.log("Error in Register", error);
+      setData({ email: "", password: "", username: "" });
     }
   };
-
   return (
     <>
       {" "}
@@ -76,14 +74,30 @@ const Login = () => {
 
                 <div className="form-outline mb-4">
                   <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    className="form-control form-control-lg"
+                    placeholder="Enter a Username"
+                    value={data.username}
+                    required={true}
+                    onChange={(e) => handleChange(e)}
+                  />
+                  <label className="form-label" htmlFor="username">
+                    Username
+                  </label>
+                </div>
+
+                <div className="form-outline mb-4">
+                  <input
                     type="email"
                     id="email"
-                    value={data.email}
-                    onChange={(e) => handleChange(e)}
-                    className="form-control form-control-lg"
                     name="email"
-                    required={true}
+                    className="form-control form-control-lg"
                     placeholder="Enter a valid email address"
+                    value={data.email}
+                    required={true}
+                    onChange={(e) => handleChange(e)}
                   />
                   <label className="form-label" htmlFor="email">
                     Email address
@@ -97,9 +111,9 @@ const Login = () => {
                     name="password"
                     className="form-control form-control-lg"
                     placeholder="Enter password"
-                    required={true}
                     onChange={(e) => handleChange(e)}
                     value={data.password}
+                    required={true}
                   />
                   <label className="form-label" htmlFor="password">
                     Password
@@ -130,12 +144,12 @@ const Login = () => {
                     style={{ paddingLeft: "2.5rem", paddingRight: "2.5rem" }}
                     onClick={(e) => handleSubmit(e)}
                   >
-                    Login
+                    Register
                   </button>
                   <p className="small fw-bold mt-2 pt-1 mb-0">
                     Don't have an account?{" "}
-                    <Link to="/register" className="link-danger">
-                      Register
+                    <Link to="/login" className="link-danger">
+                      Login
                     </Link>
                   </p>
                 </div>
@@ -167,4 +181,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
